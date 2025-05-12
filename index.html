@@ -1,0 +1,1916 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaflet Map with Sections</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+  </head>
+
+  <body class="d-flex p-0 m-0 vh-100">
+    <div class="container-fluid p-0 w-100 h-100">
+      <div class="row h-100 mx-0">
+        <!-- Left Column (Smallest) -->
+        <div class="col-2 p-2">
+          <div class="section mb-2 border border-dark rounded px-1">
+            <h6 class="fw-bold">Physiography</h6>
+            <label
+              ><input type="checkbox" id="boundary" class="color-toggle" />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: black;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Boundary</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="DarjeelingCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: cyan;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Darjeeling-Sikkim Himalaya</label
+            ><br />
+            <label
+              ><input type="checkbox" id="SubCheckbox" class="color-toggle" />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: magenta;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span
+              >Sub-Himalayan fan</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="AlluvialCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: #ffdab9;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span
+              >Alluvial plainland</label
+            ><br />
+          </div>
+
+          <div class="section mb-2 border border-dark rounded px-1">
+            <h6 class="fw-bold">Geotectonic</h6>
+            <label
+              ><input
+                type="checkbox"
+                id="GreaterHimalayanCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: yellow;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Greater Himalayan sequence</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="LesserHimalayanCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: lightgreen;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Lesser Himalayan sequence</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="Siwalik1Checkbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: lightblue;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Siwalik sequence</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="QuaternaryCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: #ffdab9;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Quaternary sequence</label
+            ><br />
+          </div>
+
+          <div class="section mb-2 border border-dark rounded px-1">
+            <h6 class="fw-bold">Geology</h6>
+            <label>
+              <input
+                type="checkbox"
+                id="GorubathanCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: lightyellow;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Gorubathan formation </label
+            ><br />
+            <label>
+              <input
+                type="checkbox"
+                id="changthangCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: #ff1493;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+
+              Changthang formation </label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="KanchenjungaCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: darkblue;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Kanchenjunga augen gneiss</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="LingsteCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: cyan;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span
+              >Lingste gneiss formation</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="ReyangCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: #ffdab9;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Reyang formation</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="PhuentsholingCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: green;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Phuentsholing formation</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="BaikunthapurCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: lightpink;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span
+              >Baikunthapur formation</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="ChalsaCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: purple;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Chalsa formation</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="MatialiCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: lightblue;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Matiali formation</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="SiwalikCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: lightgreen;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span
+              >Siwalik group formation</label
+            ><br />
+          </div>
+
+          <div class="section mb-2 border border-dark rounded px-1">
+            <h6 class="fw-bold">Geomorphology</h6>
+            <label
+              ><input
+                type="checkbox"
+                id="StructuralridgesCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: #cd853f;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Structural ridges</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="YoungerfloodCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: magenta;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Younger floodplain</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="NarrowfluvialCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: lightgreen;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Narrow fluvial valley</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="LoweralluvialCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: lightblue;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Lower alluvial terraces</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="MiddlealluvialCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: #c71585;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Middle alluvial terraces</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="HigheralluvialCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: #ffdab9;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Higher alluvial terraces</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="LowdissectedCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: green;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Low dissected structural mountain</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="HighdissectedCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: darkblue;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              High dissected structural mountain</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="MountainfoothillsCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: lightblue;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Mountain foothills with triangular facets</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="ModeratelydissectedCheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: yellow;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+
+              Moderately dissected structural mountain</label
+            ><br />
+          </div>
+        </div>
+
+        <!-- Middle Column (Largest) -->
+        <div class="col-7 p-2">
+          <div class="section mb-2">
+            <div class="section mb-2 border border-dark rounded px-1">
+              <h6 class="fw-bold">Seismotectonic</h6>
+              <div class="row">
+                <div class="col-6">
+                  <div class="section mb-2">
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="checkbox1"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Alluvial fill along linear deep</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="checkbox2"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: lightgreen;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Cover rocks of frontal belt </label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="checkbox3"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: #fadfad;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Crystaline complex overprinted</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="checkbox4"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: lightblue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span>
+                      Older cover sequence folded </label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="checkbox5"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: #ff7f7f;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Older folded cover</label
+                    ><br />
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="section mb-2">
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="Lineament"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: red;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span>
+                      Lineament </label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="Major_fault"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: #800000;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span>
+                      Major fault </label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="Thrust_fault"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: #800080;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span>
+                      Thrust fault </label
+                    ><br />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section mb-2 border border-dark rounded px-1">
+              <h6 class="fw-bold">Morphotectonic Index</h6>
+              <div class="row">
+                <!-- First subsection -->
+                <div class="col-4">
+                  <div class="section mb-2 border border-dark rounded px-1">
+                    <h6 class="fw-bold">Avg. Bifurcation Ratio</h6>
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="onecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Above 2.578</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="twocheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: blue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span>
+                      1.936 -2.578</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="threecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: gray;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span>
+                      Below 1.936</label
+                    ><br />
+                  </div>
+
+                  <div class="section mb-2 border border-dark rounded px-1">
+                    <h6 class="fw-bold">Hypsometric Area Index</h6>
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fourcheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Above 1.446</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fivecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: blue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span>
+                      0.987-1.446</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="sixcheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: gray;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span>
+                      Below .987</label
+                    ><br />
+                  </div>
+
+                  <div class="section mb-2 border border-dark rounded px-1">
+                    <h6 class="fw-bold">Active Stream Sinuosity Index</h6>
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="sevencheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Above 1.210</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="eightcheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: blue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >1.210 - 1.307</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="ninecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: gray;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Below 1.307</label
+                    ><br />
+                  </div>
+
+                  <div class="section mb-2 border border-dark rounded px-1">
+                    <h6 class="fw-bold">Basin Circularity</h6>
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="tencheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Above 0.699</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="elevencheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: blue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span>
+                      0.553 - 0.669</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="twelvecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: gray;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Below 0.553</label
+                    ><br />
+                  </div>
+                </div>
+
+                <!-- Second subsection -->
+                <div class="col-4">
+                  <div class="section mb-2 border border-dark rounded px-1">
+                    <h6 class="fw-bold">Basin Shape Index</h6>
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="thirteencheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Above 6.152</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fourteencheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: blue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >4.315 - 6.152</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fifteencheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: gray;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Below 4.315</label
+                    ><br />
+                  </div>
+
+                  <div class="section mb-2 border border-dark rounded px-1">
+                    <h6 class="fw-bold">Asymmetry Factor</h6>
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="sixteencheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Above 0.673 </label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="seventeencheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: blue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >0.517 - 0.673 </label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="eighteencheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: gray;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Below 0.517</label
+                    ><br />
+                  </div>
+
+                  <div class="section mb-2 border border-dark rounded px-1">
+                    <h6 class="fw-bold">Drainage Density</h6>
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="nineteencheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Above 0.961 </label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="twentycheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: blue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >0.66 - 0.960 </label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="twentyonecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: gray;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Below 0.661 </label
+                    ><br />
+                  </div>
+
+                  <div class="section mb-2 border border-dark rounded px-1">
+                    <h6 class="fw-bold">Relief Ratio</h6>
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="twentytwocheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Above 0.048 </label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="twentythreecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: blue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >0.025 - 0.048 </label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="twentyfourcheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: gray;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Below 0.025 </label
+                    ><br />
+                  </div>
+                </div>
+
+                <!-- Third subsection -->
+                <div class="col-4">
+                  <div class="section mb-2 border border-dark rounded px-1">
+                    <h6 class="fw-bold">Ruggedness Index</h6>
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="twentyfivecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Above 2.604 </label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="twentysixcheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: blue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >1.318 - 2.603 </label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="twentysevencheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: gray;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Below 1.317 </label
+                    ><br />
+                  </div>
+
+                  <div class="section mb-2 border border-dark rounded px-1">
+                    <h6 class="fw-bold">Hypsometric Integral</h6>
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="twentyeightcheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Above 0.203 </label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="twentyninecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: blue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >0.107 - 0.203</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="thirtycheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: gray;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Below 0.107 </label
+                    ><br />
+                  </div>
+
+                  <div class="section mb-2 border border-dark rounded px-1">
+                    <h6 class="fw-bold">AVFWHR</h6>
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="thirtyonecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Above 29.057 </label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="thirtytwocheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: blue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >18.86 - 29.057 </label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="thirtythreecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: gray;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Below 18.863</label
+                    ><br />
+                  </div>
+
+                  <div class="section mb-2 border border-dark rounded px-1">
+                    <h6 class="fw-bold">Average Slope Gradient Index</h6>
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="thirtyfourcheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >Above 331 </label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="thirtyfivecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: blue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span>
+                      171 - 331 </label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="thirtysixcheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: gray;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span>
+                      Below 171 </label
+                    ><br />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section mb-2 border border-dark rounded px-1">
+              <h6 class="fw-bold">Model based on morphotectonic</h6>
+              <div class="row">
+                <!-- First subsection -->
+                <div class="col-4">
+                  <div class="section mb-2 border border-dark rounded px-1">
+                    <h6 class="fw-bold">AM</h6>
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="thirtysevencheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: yellow;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >STA Below 3</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="thirtyeightcheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >MDA 3-5</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="thirtyninecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: blue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >SLA Above 5</label
+                    ><br />
+                  </div>
+
+                  <div class="section mb-2 border border-dark rounded px-1">
+                    <h6 class="fw-bold">AHP</h6>
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fortycheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: yellow;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >STA Below 3</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fortyonecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >MDA 3-5</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fortytwocheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: blue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >SLA Above 5</label
+                    ><br />
+                  </div>
+                </div>
+
+                <!-- Second subsection -->
+                <div class="col-4">
+                  <div class="section mb-2 border border-dark rounded px-1">
+                    <h6 class="fw-bold">PCA</h6>
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fortythreecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: yellow;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >STA Below 3</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fortyfourcheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >MDA 3-5</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fortyfivecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: blue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >SLA Above 5</label
+                    ><br />
+                  </div>
+
+                  <div class="section mb-2 border border-dark rounded px-1">
+                    <h6 class="fw-bold">KMC</h6>
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fortysixcheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: yellow;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >STA Below 3</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fortysevencheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >MDA 3-5</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fortyeightcheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: blue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >SLA Above 5</label
+                    ><br />
+                  </div>
+                </div>
+
+                <!-- Third subsection -->
+                <div class="col-4">
+                  <div class="section mb-2 border border-dark rounded px-1">
+                    <h6 class="fw-bold">HC</h6>
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fortyninecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: yellow;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >STA Below 3</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fiftycheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >MDA 3-5</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fiftyonecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: blue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >SLA Above 5</label
+                    ><br />
+                  </div>
+
+                  <div class="section mb-2 border border-dark rounded px-1">
+                    <h6 class="fw-bold">GDPA</h6>
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fiftytwocheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: yellow;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >STA Below 3</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fiftythreecheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: pink;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >MDA 3-5</label
+                    ><br />
+                    <label
+                      ><input
+                        type="checkbox"
+                        id="fiftyfourcheckbox"
+                        class="color-toggle"
+                      />
+                      <span
+                        style="
+                          display: inline-block;
+                          width: 12px;
+                          height: 12px;
+                          background-color: blue;
+                          border: 1px solid black;
+                          margin-right: 5px;
+                        "
+                      ></span
+                      >SLA Above 5</label
+                    ><br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right Column (Smallest - Map) -->
+        <div class="col-3 p-2">
+          <div
+            id="map"
+            class="border border-dark rounded"
+            style="width: 100%; height: 50%"
+          >
+            <div class="leaflet-control coordinate"></div>
+          </div>
+          <div class="section mt-2 border border-dark rounded px-1">
+            <h6 class="fw-bold">Soil</h6>
+            <label
+              ><input
+                type="checkbox"
+                id="fiftyfivecheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: lightpink;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span
+              >Coarse loamy</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="fiftysixcheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: lightgreen;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span
+              >Coarse loamy mixed</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="fiftysevencheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: #bfa500;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span
+              >Loamy skeletal</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="fiftyeightcheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: lightblue;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Fine loamy with coarse loamy</label
+            ><br />
+            <label
+              ><input
+                type="checkbox"
+                id="fiftyninecheckbox"
+                class="color-toggle"
+              />
+              <span
+                style="
+                  display: inline-block;
+                  width: 12px;
+                  height: 12px;
+                  background-color: #ff7f7f;
+                  border: 1px solid black;
+                  margin-right: 5px;
+                "
+              ></span>
+              Coarse loamy with loamy skeletal</label
+            ><br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/georaster"></script>
+    <script src="https://unpkg.com/georaster-layer-for-leaflet/dist/georaster-layer-for-leaflet.min.js"></script>
+    <script src="https://unpkg.com/geoblaze"></script>
+    <script src="js/point.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
+    <style>
+      .section h6 {
+        font-size: 0.64rem;
+        margin-bottom: 0.1px;
+      }
+      .form-check-label {
+        font-size: 0.75rem;
+      }
+      .form-check {
+        margin-bottom: 0.1px;
+      }
+      label {
+        font-size: 0.64rem;
+        margin-right: 5px;
+      }
+    </style>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/georaster"></script>
+    <script src="https://unpkg.com/georaster-layer-for-leaflet/dist/georaster-layer-for-leaflet.min.js"></script>
+    <script src="https://unpkg.com/geoblaze"></script>
+
+    <!-- External JS Files -->
+    <script src="js/point.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

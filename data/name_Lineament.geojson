@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "name_Lineament",
+"features": [
+{ "type": "Feature", "properties": { "OBJECTID": 16, "LEFT_FID": 0, "RIGHT_FID": 0, "name": "Lineament", "feature_na": "TL", "Shape_Leng": 1.4697742959, "Shape_Le_1": 0.45026702041 }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 88.48941417900005, 26.971568693000052 ], [ 88.719681523000077, 26.584635443000025 ] ] ] } }
+]
+}
