@@ -281,7 +281,9 @@ document
   .addEventListener("change", function () {
     if (this.checked) {
       // Load and display the GeoJSON file
-      fetch("../data/OBJECTID_1_3.geojson") // Replace with actual GeoJSON file path
+      fetch(
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_3.geojson"
+      ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
           Matiali = L.geoJSON(data, {
@@ -312,7 +314,9 @@ document
   .addEventListener("change", function () {
     if (this.checked) {
       // Load and display the GeoJSON file
-      fetch("../data/OBJECTID_1_4.geojson") // Replace with actual GeoJSON file path
+      fetch(
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_4.geojson"
+      ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
           Siwalik = L.geoJSON(data, {
@@ -343,7 +347,9 @@ document
   .addEventListener("change", function () {
     if (this.checked) {
       // Load and display the GeoJSON file
-      fetch("../data/OBJECTID_1_5.geojson") // Replace with actual GeoJSON file path
+      fetch(
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_5.geojson"
+      ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
           Kanchenjunga = L.geoJSON(data, {
@@ -374,7 +380,9 @@ document
   .addEventListener("change", function () {
     if (this.checked) {
       // Load and display the GeoJSON file
-      fetch("../data/OBJECTID_1_6.geojson") // Replace with actual GeoJSON file path
+      fetch(
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_6.geojson"
+      ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
           changthang = L.geoJSON(data, {
@@ -405,7 +413,9 @@ document
   .addEventListener("change", function () {
     if (this.checked) {
       // Load and display the GeoJSON file
-      fetch("../data/OBJECTID_1_7.geojson") // Replace with actual GeoJSON file path
+      fetch(
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_7.geojson"
+      ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
           Lingste = L.geoJSON(data, {
@@ -436,7 +446,9 @@ document
   .addEventListener("change", function () {
     if (this.checked) {
       // Load and display the GeoJSON file
-      fetch("../data/OBJECTID_1_9.geojson") // Replace with actual GeoJSON file path
+      fetch(
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_9.geojson"
+      ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
           Phuentsholing = L.geoJSON(data, {
@@ -467,7 +479,9 @@ document
   .addEventListener("change", function () {
     if (this.checked) {
       // Load and display the GeoJSON file
-      fetch("../data/OBJECTID_1_12.geojson") // Replace with actual GeoJSON file path
+      fetch(
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_12.geojson"
+      ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
           Gorubathan = L.geoJSON(data, {
@@ -497,8 +511,8 @@ document
   .getElementById("ReyangCheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/OBJECTID_1_11.geojson",
-      "../data/OBJECTID_1_2.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_11.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_2.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -535,9 +549,9 @@ document
   .getElementById("ChalsaCheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/OBJECTID_1_10.geojson",
-      "../data/OBJECTID_1_1.geojson",
-      "../data/OBJECTID_1_13.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_10.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_1.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_13.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -574,8 +588,8 @@ document
   .getElementById("BaikunthapurCheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/OBJECTID_1_14.geojson",
-      "../data/OBJECTID_1_8.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_14.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_8.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -613,7 +627,9 @@ document
   .addEventListener("change", function () {
     if (this.checked) {
       // Load and display the GeoJSON file
-      fetch("../data/OBJECTID_1.geojson") // Replace with actual GeoJSON file path
+      fetch(
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1.geojson"
+      ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
           Darjeeling = L.geoJSON(data, {
@@ -642,7 +658,9 @@ var Sub; // Variable to store the GeoJSON layer
 document.getElementById("SubCheckbox").addEventListener("change", function () {
   if (this.checked) {
     // Load and display the GeoJSON file
-    fetch("../data/OBJECTID_3.geojson") // Replace with actual GeoJSON file path
+    fetch(
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_3.geojson"
+    ) // Replace with actual GeoJSON file path
       .then((response) => response.json())
       .then((data) => {
         Sub = L.geoJSON(data, {
@@ -673,7 +691,9 @@ document
   .addEventListener("change", function () {
     if (this.checked) {
       // Load and display the GeoJSON file
-      fetch("../data/OBJECTID_2.geojson") // Replace with actual GeoJSON file path
+      fetch(
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_2.geojson"
+      ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
           Alluvial = L.geoJSON(data, {
@@ -703,8 +723,8 @@ document
   .getElementById("GreaterHimalayanCheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/OBJECTID_1_5.geojson",
-      "../data/OBJECTID_1_6.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_5.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_6.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -741,10 +761,10 @@ document
   .getElementById("LesserHimalayanCheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/OBJECTID_1_12.geojson",
-      "../data/OBJECTID_1_2.geojson",
-      "../data/OBJECTID_1_7.geojson",
-      "../data/OBJECTID_1_11.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_12.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_2.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_7.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_11.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -782,7 +802,9 @@ document
   .addEventListener("change", function () {
     if (this.checked) {
       // Load and display the GeoJSON file
-      fetch("../data/OBJECTID_1_4.geojson") // Replace with actual GeoJSON file path
+      fetch(
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_4.geojson"
+      ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
           Siwalik1 = L.geoJSON(data, {
@@ -812,13 +834,13 @@ document
   .getElementById("QuaternaryCheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/OBJECTID_1_1.geojson",
-      "../data/OBJECTID_1_10.geojson",
-      "../data/OBJECTID_1_13.geojson",
-      "../data/OBJECTID_1_14.geojson",
-      "../data/OBJECTID_1_3.geojson",
-      "../data/OBJECTID_1_8.geojson",
-      "../data/OBJECTID_1_9.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_1.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_10.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_13.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_14.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_3.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_8.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_9.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -856,7 +878,9 @@ document
   .addEventListener("change", function () {
     if (this.checked) {
       // Load and display the GeoJSON file
-      fetch("../data/geomorphol_Structural ridges.geojson") // Replace with actual GeoJSON file path
+      fetch(
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/geomorphol_Structural ridges.geojson"
+      ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
           Structuralridges = L.geoJSON(data, {
@@ -887,7 +911,9 @@ document
   .addEventListener("change", function () {
     if (this.checked) {
       // Load and display the GeoJSON file
-      fetch("../data/geomorphol_Younger floodplain.geojson") // Replace with actual GeoJSON file path
+      fetch(
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/geomorphol_Younger floodplain.geojson"
+      ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
           Youngerflood = L.geoJSON(data, {
@@ -918,7 +944,9 @@ document
   .addEventListener("change", function () {
     if (this.checked) {
       // Load and display the GeoJSON file
-      fetch("../data/geomorphol_Narrow fluvial valley.geojson") // Replace with actual GeoJSON file path
+      fetch(
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/geomorphol_Narrow fluvial valley.geojson"
+      ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
           Narrowfluvial = L.geoJSON(data, {
@@ -949,7 +977,9 @@ document
   .addEventListener("change", function () {
     if (this.checked) {
       // Load and display the GeoJSON file
-      fetch("../data/geomorphol_Lower alluvial terraces.geojson") // Replace with actual GeoJSON file path
+      fetch(
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/geomorphol_Lower alluvial terraces.geojson"
+      ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
           Loweralluvial = L.geoJSON(data, {
@@ -980,7 +1010,9 @@ document
   .addEventListener("change", function () {
     if (this.checked) {
       // Load and display the GeoJSON file
-      fetch("../data/geomorphol_Middle alluvial terraces.geojson") // Replace with actual GeoJSON file path
+      fetch(
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/geomorphol_Middle alluvial terraces.geojson"
+      ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
           Middlealluvial = L.geoJSON(data, {
@@ -1011,7 +1043,9 @@ document
   .addEventListener("change", function () {
     if (this.checked) {
       // Load and display the GeoJSON file
-      fetch("../data/geomorphol_Higher alluvial terraces.geojson") // Replace with actual GeoJSON file path
+      fetch(
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/geomorphol_Higher alluvial terraces.geojson"
+      ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
           Higheralluvial = L.geoJSON(data, {
@@ -1042,7 +1076,9 @@ document
   .addEventListener("change", function () {
     if (this.checked) {
       // Load and display the GeoJSON file
-      fetch("../data/geomorphol_Low dissected structural mountain.geojson") // Replace with actual GeoJSON file path
+      fetch(
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/geomorphol_Low dissected structural mountain.geojson"
+      ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
           Lowdissected = L.geoJSON(data, {
@@ -1073,7 +1109,9 @@ document
   .addEventListener("change", function () {
     if (this.checked) {
       // Load and display the GeoJSON file
-      fetch("../data/geomorphol_Highly dissected structural mountain.geojson") // Replace with actual GeoJSON file path
+      fetch(
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/geomorphol_Highly dissected structural mountain.geojson"
+      ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
           Highdissected = L.geoJSON(data, {
@@ -1105,7 +1143,7 @@ document
     if (this.checked) {
       // Load and display the GeoJSON file
       fetch(
-        "../data/geomorphol_Mountain foothills with traingular facets.geojson"
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/geomorphol_Mountain foothills with traingular facets.geojson"
       ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
@@ -1138,7 +1176,7 @@ document
     if (this.checked) {
       // Load and display the GeoJSON file
       fetch(
-        "../data/geomorphol_Moderately dissected structural mountain.geojson"
+        "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/geomorphol_Moderately dissected structural mountain.geojson"
       ) // Replace with actual GeoJSON file path
         .then((response) => response.json())
         .then((data) => {
@@ -1167,10 +1205,10 @@ var onecheck = []; // Array to store multiple GeoJSON layers
 
 document.getElementById("onecheckbox").addEventListener("change", function () {
   var geojsonFiles = [
-    "../data/micr_basin_Dharla.geojson",
-    "../data/micr_basin_Gish.geojson",
-    "../data/micr_basin_Tista lower (foothills).geojson",
-    "../data/micr_basin_Upper chel.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Dharla.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Gish.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (foothills).geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Upper chel.geojson",
   ]; // Add multiple files here
 
   if (this.checked) {
@@ -1204,7 +1242,9 @@ document.getElementById("onecheckbox").addEventListener("change", function () {
 var twocheck = []; // Array to store multiple GeoJSON layers
 
 document.getElementById("twocheckbox").addEventListener("change", function () {
-  var geojsonFiles = ["../data/micr_basin_Lish.geojson"]; // Add multiple files here
+  var geojsonFiles = [
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lish.geojson",
+  ]; // Add multiple files here
 
   if (this.checked) {
     // Load and display each GeoJSON file
@@ -1240,8 +1280,8 @@ document
   .getElementById("threecheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Tista lower (plainland).geojson",
-      "../data/micr_basin_Lower Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (plainland).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lower Chel.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -1276,9 +1316,9 @@ var fourcheck = []; // Array to store multiple GeoJSON layers
 
 document.getElementById("fourcheckbox").addEventListener("change", function () {
   var geojsonFiles = [
-    "../data/micr_basin_Lish.geojson",
-    "../data/micr_basin_Tista lower (plainland).geojson",
-    "../data/micr_basin_Tista lower (foothills).geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lish.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (plainland).geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (foothills).geojson",
   ]; // Add multiple files here
 
   if (this.checked) {
@@ -1313,8 +1353,8 @@ var fivecheck = []; // Array to store multiple GeoJSON layers
 
 document.getElementById("fivecheckbox").addEventListener("change", function () {
   var geojsonFiles = [
-    "../data/micr_basin_Gish.geojson",
-    "../data/micr_basin_Lower Chel.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Gish.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lower Chel.geojson",
   ]; // Add multiple files here
 
   if (this.checked) {
@@ -1349,8 +1389,8 @@ var sixcheck = []; // Array to store multiple GeoJSON layers
 
 document.getElementById("sixcheckbox").addEventListener("change", function () {
   var geojsonFiles = [
-    "../data/micr_basin_Dharla.geojson",
-    "../data/micr_basin_Upper chel.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Dharla.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Upper chel.geojson",
   ]; // Add multiple files here
 
   if (this.checked) {
@@ -1386,7 +1426,9 @@ var sevencheck = []; // Array to store multiple GeoJSON layers
 document
   .getElementById("sevencheckbox")
   .addEventListener("change", function () {
-    var geojsonFiles = ["../data/micr_basin_Lish.geojson"]; // Add multiple files here
+    var geojsonFiles = [
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lish.geojson",
+    ]; // Add multiple files here
 
     if (this.checked) {
       // Load and display each GeoJSON file
@@ -1422,8 +1464,8 @@ document
   .getElementById("eightcheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Tista lower (foothills).geojson",
-      "../data/micr_basin_Lower Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (foothills).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lower Chel.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -1458,10 +1500,10 @@ var ninecheck = []; // Array to store multiple GeoJSON layers
 
 document.getElementById("ninecheckbox").addEventListener("change", function () {
   var geojsonFiles = [
-    "../data/micr_basin_Dharla.geojson",
-    "../data/micr_basin_Gish.geojson",
-    "../data/micr_basin_Tista lower (plainland).geojson",
-    "../data/micr_basin_Upper chel.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Dharla.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Gish.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (plainland).geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Upper chel.geojson",
   ]; // Add multiple files here
 
   if (this.checked) {
@@ -1496,12 +1538,12 @@ var tencheck = []; // Array to store multiple GeoJSON layers
 
 document.getElementById("tencheckbox").addEventListener("change", function () {
   var geojsonFiles = [
-    "../data/micr_basin_Dharla.geojson",
-    "../data/micr_basin_Gish.geojson",
-    "../data/micr_basin_Lish.geojson",
-    "../data/micr_basin_Lower Chel.geojson",
-    "../data/micr_basin_Tista lower (foothills).geojson",
-    "../data/micr_basin_Upper chel.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Dharla.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Gish.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lish.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lower Chel.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (foothills).geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Upper chel.geojson",
   ]; // Add multiple files here
 
   if (this.checked) {
@@ -1537,7 +1579,9 @@ var twelvecheck = []; // Array to store multiple GeoJSON layers
 document
   .getElementById("twelvecheckbox")
   .addEventListener("change", function () {
-    var geojsonFiles = ["../data/micr_basin_Tista lower (plainland).geojson"]; // Add multiple files here
+    var geojsonFiles = [
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (plainland).geojson",
+    ]; // Add multiple files here
 
     if (this.checked) {
       // Load and display each GeoJSON file
@@ -1572,7 +1616,9 @@ var thirteencheck = []; // Array to store multiple GeoJSON layers
 document
   .getElementById("thirteencheckbox")
   .addEventListener("change", function () {
-    var geojsonFiles = ["../data/micr_basin_Tista lower (plainland).geojson"]; // Add multiple files here
+    var geojsonFiles = [
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (plainland).geojson",
+    ]; // Add multiple files here
 
     if (this.checked) {
       // Load and display each GeoJSON file
@@ -1608,12 +1654,12 @@ document
   .getElementById("fifteencheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Dharla.geojson",
-      "../data/micr_basin_Gish.geojson",
-      "../data/micr_basin_Lish.geojson",
-      "../data/micr_basin_Lower Chel.geojson",
-      "../data/micr_basin_Tista lower (foothills).geojson",
-      "../data/micr_basin_Upper chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Dharla.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Gish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lower Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (foothills).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Upper chel.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -1649,7 +1695,9 @@ var sixteencheck = []; // Array to store multiple GeoJSON layers
 document
   .getElementById("sixteencheckbox")
   .addEventListener("change", function () {
-    var geojsonFiles = ["../data/micr_basin_Lower Chel.geojson"]; // Add multiple files here
+    var geojsonFiles = [
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lower Chel.geojson",
+    ]; // Add multiple files here
 
     if (this.checked) {
       // Load and display each GeoJSON file
@@ -1685,8 +1733,8 @@ document
   .getElementById("seventeencheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Gish.geojson",
-      "../data/micr_basin_Lish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Gish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lish.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -1723,10 +1771,10 @@ document
   .getElementById("eighteencheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Dharla.geojson",
-      "../data/micr_basin_Tista lower (foothills).geojson",
-      "../data/micr_basin_Tista lower (plainland).geojson",
-      "../data/micr_basin_Upper chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Dharla.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (foothills).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (plainland).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Upper chel.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -1763,12 +1811,12 @@ document
   .getElementById("nineteencheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Dharla.geojson",
-      "../data/micr_basin_Gish.geojson",
-      "../data/micr_basin_Lish.geojson",
-      "../data/micr_basin_Lower Chel.geojson",
-      "../data/micr_basin_Tista lower (foothills).geojson",
-      "../data/micr_basin_Upper chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Dharla.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Gish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lower Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (foothills).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Upper chel.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -1804,7 +1852,9 @@ var twentyonecheck = []; // Array to store multiple GeoJSON layers
 document
   .getElementById("twentyonecheckbox")
   .addEventListener("change", function () {
-    var geojsonFiles = ["../data/micr_basin_Tista lower (plainland).geojson"]; // Add multiple files here
+    var geojsonFiles = [
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (plainland).geojson",
+    ]; // Add multiple files here
 
     if (this.checked) {
       // Load and display each GeoJSON file
@@ -1840,11 +1890,11 @@ document
   .getElementById("twentytwocheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Dharla.geojson",
-      "../data/micr_basin_Gish.geojson",
-      "../data/micr_basin_Lish.geojson",
-      "../data/micr_basin_Tista lower (foothills).geojson",
-      "../data/micr_basin_Upper chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Dharla.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Gish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (foothills).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Upper chel.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -1881,8 +1931,8 @@ document
   .getElementById("twentyfourcheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Lower Chel.geojson",
-      "../data/micr_basin_Tista lower (plainland).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lower Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (plainland).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -1919,8 +1969,8 @@ document
   .getElementById("twentyfivecheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Dharla.geojson",
-      "../data/micr_basin_Upper chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Dharla.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Upper chel.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -1957,8 +2007,8 @@ document
   .getElementById("twentysixcheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Gish.geojson",
-      "../data/micr_basin_Tista lower (foothills).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Gish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (foothills).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -1995,9 +2045,9 @@ document
   .getElementById("twentysevencheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Lish.geojson",
-      "../data/micr_basin_Lower Chel.geojson",
-      "../data/micr_basin_Tista lower (plainland).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lower Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (plainland).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2036,10 +2086,10 @@ document
   .getElementById("twentyeightcheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Gish.geojson",
-      "../data/micr_basin_Lower Chel.geojson",
-      "../data/micr_basin_Tista lower (plainland).geojson",
-      "../data/micr_basin_Tista lower (foothills).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Gish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lower Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (plainland).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (foothills).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2076,8 +2126,8 @@ document
   .getElementById("twentyninecheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Lish.geojson",
-      "../data/micr_basin_Dharla.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Dharla.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2113,7 +2163,9 @@ var thirtycheck = []; // Array to store multiple GeoJSON layers
 document
   .getElementById("thirtycheckbox")
   .addEventListener("change", function () {
-    var geojsonFiles = ["../data/micr_basin_Upper Chel.geojson"]; // Add multiple files here
+    var geojsonFiles = [
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Upper Chel.geojson",
+    ]; // Add multiple files here
 
     if (this.checked) {
       // Load and display each GeoJSON file
@@ -2149,8 +2201,8 @@ document
   .getElementById("thirtyonecheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Gish.geojson",
-      "../data/micr_basin_Tista lower (plainland).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Gish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (plainland).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2187,8 +2239,8 @@ document
   .getElementById("thirtytwocheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Lower Chel.geojson",
-      "../data/micr_basin_Tista lower (foothills).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lower Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (foothills).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2225,9 +2277,9 @@ document
   .getElementById("thirtythreecheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Dharla.geojson",
-      "../data/micr_basin_Lish.geojson",
-      "../data/micr_basin_Upper chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Dharla.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Upper chel.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2264,8 +2316,8 @@ document
   .getElementById("thirtyfourcheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Dharla.geojson",
-      "../data/micr_basin_Lish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Dharla.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lish.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2301,7 +2353,9 @@ var thirtyfivecheck = []; // Array to store multiple GeoJSON layers
 document
   .getElementById("thirtyfivecheckbox")
   .addEventListener("change", function () {
-    var geojsonFiles = ["../data/micr_basin_Gish.geojson"]; // Add multiple files here
+    var geojsonFiles = [
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Gish.geojson",
+    ]; // Add multiple files here
 
     if (this.checked) {
       // Load and display each GeoJSON file
@@ -2337,10 +2391,10 @@ document
   .getElementById("thirtysixcheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Lower Chel.geojson",
-      "../data/micr_basin_Upper Chel.geojson",
-      "../data/micr_basin_Tista lower (plainland).geojson",
-      "../data/micr_basin_Tista lower (foothills).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lower Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Upper Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (plainland).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (foothills).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2377,8 +2431,8 @@ document
   .getElementById("thirtysevencheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Dharla.geojson",
-      "../data/micr_basin_Tista lower (foothills).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Dharla.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (foothills).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2415,9 +2469,9 @@ document
   .getElementById("thirtyeightcheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Lish.geojson",
-      "../data/micr_basin_Gish.geojson",
-      "../data/micr_basin_Upper Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Gish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Upper Chel.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2454,8 +2508,8 @@ document
   .getElementById("thirtyninecheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Lower Chel.geojson",
-      "../data/micr_basin_Tista lower (plainland).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lower Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (plainland).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2492,8 +2546,8 @@ document
   .getElementById("fortycheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Gish.geojson",
-      "../data/micr_basin_Tista lower (foothills).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Gish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (foothills).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2530,9 +2584,9 @@ document
   .getElementById("fortyonecheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Lish.geojson",
-      "../data/micr_basin_Upper Chel.geojson",
-      "../data/micr_basin_Dharla.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Upper Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Dharla.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2569,8 +2623,8 @@ document
   .getElementById("fortytwocheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Lower Chel.geojson",
-      "../data/micr_basin_Tista lower (plainland).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lower Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (plainland).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2607,8 +2661,8 @@ document
   .getElementById("fortythreecheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Gish.geojson",
-      "../data/micr_basin_Tista lower (foothills).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Gish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (foothills).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2645,8 +2699,8 @@ document
   .getElementById("fortyfourcheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Lish.geojson",
-      "../data/micr_basin_Tista lower (plainland).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (plainland).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2683,9 +2737,9 @@ document
   .getElementById("fortyfivecheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Dharla.geojson",
-      "../data/micr_basin_Lower Chel.geojson",
-      "../data/micr_basin_Upper Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Dharla.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lower Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Upper Chel.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2722,8 +2776,8 @@ document
   .getElementById("fortysixcheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Dharla.geojson",
-      "../data/micr_basin_Upper Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Dharla.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Upper Chel.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2760,9 +2814,9 @@ document
   .getElementById("fortysevencheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Lish.geojson",
-      "../data/micr_basin_Gish.geojson",
-      "../data/micr_basin_Tista lower (foothills).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Gish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (foothills).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2799,8 +2853,8 @@ document
   .getElementById("fortyeightcheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Lower Chel.geojson",
-      "../data/micr_basin_Tista lower (plainland).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lower Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (plainland).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2837,8 +2891,8 @@ document
   .getElementById("fortyninecheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Lower Chel.geojson",
-      "../data/micr_basin_Tista lower (foothills).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lower Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (foothills).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2875,9 +2929,9 @@ document
   .getElementById("fiftycheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Lish.geojson",
-      "../data/micr_basin_Gish.geojson",
-      "../data/micr_basin_Dharla.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Gish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Dharla.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2914,8 +2968,8 @@ document
   .getElementById("fiftyonecheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Upper Chel.geojson",
-      "../data/micr_basin_Tista lower (plainland).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Upper Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (plainland).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2952,8 +3006,8 @@ document
   .getElementById("fiftytwocheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Dharla.geojson",
-      "../data/micr_basin_Tista lower (foothills).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Dharla.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (foothills).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -2990,9 +3044,9 @@ document
   .getElementById("fiftythreecheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Lish.geojson",
-      "../data/micr_basin_Gish.geojson",
-      "../data/micr_basin_Upper Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Gish.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Upper Chel.geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -3029,8 +3083,8 @@ document
   .getElementById("fiftyfourcheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/micr_basin_Lower Chel.geojson",
-      "../data/micr_basin_Tista lower (plainland).geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Lower Chel.geojson",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/micr_basin_Tista lower (plainland).geojson",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -3067,15 +3121,15 @@ document
   .getElementById("fiftyfivecheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/OBJECTID_12_14.geojsons.json",
-      "../data/OBJECTID_12_23.geojsons.json",
-      "../data/OBJECTID_12_29.geojsons.json",
-      "../data/OBJECTID_12_3.geojsons.json",
-      "../data/OBJECTID_12_36.geojsons.json",
-      "../data/OBJECTID_12_39.geojsons.json",
-      "../data/OBJECTID_12_4.geojsons.json",
-      "../data/OBJECTID_12_40.geojsons.json",
-      "../data/OBJECTID_12_9.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_14.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_23.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_29.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_3.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_36.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_39.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_4.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_40.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_9.geojsons.json",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -3111,7 +3165,9 @@ var fiftysixcheck = []; // Array to store multiple GeoJSON layers
 document
   .getElementById("fiftysixcheckbox")
   .addEventListener("change", function () {
-    var geojsonFiles = ["../data/OBJECTID_12_32.geojsons.json"]; // Add multiple files here
+    var geojsonFiles = [
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_32.geojsons.json",
+    ]; // Add multiple files here
 
     if (this.checked) {
       // Load and display each GeoJSON file
@@ -3147,14 +3203,14 @@ document
   .getElementById("fiftysevencheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/OBJECTID_12_15.geojsons.json",
-      "../data/OBJECTID_12_16.geojsons.json",
-      "../data/OBJECTID_12_17.geojsons.json",
-      "../data/OBJECTID_12_20.geojsons.json",
-      "../data/OBJECTID_12_26.geojsons.json",
-      "../data/OBJECTID_12_32.geojsons.json",
-      "../data/OBJECTID_12_33.geojsons.json",
-      "../data/OBJECTID_12_6.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_15.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_16.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_17.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_20.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_26.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_32.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_33.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_6.geojsons.json",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -3191,15 +3247,15 @@ document
   .getElementById("fiftyeightcheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/OBJECTID_12_11.geojsons.json",
-      "../data/OBJECTID_12_2.geojsons.json",
-      "../data/OBJECTID_12_22.geojsons.json",
-      "../data/OBJECTID_12_24.geojsons.json",
-      "../data/OBJECTID_12_28.geojsons.json",
-      "../data/OBJECTID_12_35.geojsons.json",
-      "../data/OBJECTID_12_37.geojsons.json",
-      "../data/OBJECTID_12_38.geojsons.json",
-      "../data/OBJECTID_12_5.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_11.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_2.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_22.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_24.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_28.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_35.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_37.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_38.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_5.geojsons.json",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -3236,12 +3292,12 @@ document
   .getElementById("fiftyninecheckbox")
   .addEventListener("change", function () {
     var geojsonFiles = [
-      "../data/OBJECTID_12_12.geojsons.json",
-      "../data/OBJECTID_12_13.geojsons.json",
-      "../data/OBJECTID_12_18.geojsons.json",
-      "../data/OBJECTID_12_21.geojsons.json",
-      "../data/OBJECTID_12_27.geojsons.json",
-      "../data/OBJECTID_12_34.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_12.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_13.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_18.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_21.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_27.geojsons.json",
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_12_34.geojsons.json",
     ]; // Add multiple files here
 
     if (this.checked) {
@@ -3276,12 +3332,12 @@ var checkbox1 = []; // Array to store multiple GeoJSON layers
 
 document.getElementById("checkbox1").addEventListener("change", function () {
   var geojsonFiles = [
-    "../data/OBJECTID_I_1.geojson",
-    "../data/OBJECTID_1_13.geojson",
-    "../data/OBJECTID_1_14.geojson",
-    "../data/OBJECTID_1_3.geojson",
-    "../data/OBJECTID_1_8.geojson",
-    "../data/OBJECTID_1_10.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_I_1.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_13.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_14.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_3.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_8.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_10.geojson",
   ]; // Add multiple files here
 
   if (this.checked) {
@@ -3315,7 +3371,9 @@ document.getElementById("checkbox1").addEventListener("change", function () {
 var checkbox2 = []; // Array to store multiple GeoJSON layers
 
 document.getElementById("checkbox2").addEventListener("change", function () {
-  var geojsonFiles = ["../data/OBJECTID_1_4.geojson"]; // Add multiple files here
+  var geojsonFiles = [
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_4.geojson",
+  ]; // Add multiple files here
 
   if (this.checked) {
     // Load and display each GeoJSON file
@@ -3349,8 +3407,8 @@ var checkbox3 = []; // Array to store multiple GeoJSON layers
 
 document.getElementById("checkbox3").addEventListener("change", function () {
   var geojsonFiles = [
-    "../data/OBJECTID_1_5.geojson",
-    "../data/OBJECTID_1_6.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_5.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_6.geojson",
   ]; // Add multiple files here
 
   if (this.checked) {
@@ -3384,7 +3442,9 @@ document.getElementById("checkbox3").addEventListener("change", function () {
 var checkbox4 = []; // Array to store multiple GeoJSON layers
 
 document.getElementById("checkbox4").addEventListener("change", function () {
-  var geojsonFiles = ["../data/OBJECTID_1_4.geojson"]; // Add multiple files here
+  var geojsonFiles = [
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_4.geojson",
+  ]; // Add multiple files here
 
   if (this.checked) {
     // Load and display each GeoJSON file
@@ -3418,11 +3478,11 @@ var checkbox5 = []; // Array to store multiple GeoJSON layers
 
 document.getElementById("checkbox5").addEventListener("change", function () {
   var geojsonFiles = [
-    "../data/OBJECTID_1_11.geojson",
-    "../data/OBJECTID_1_12.geojson",
-    "../data/OBJECTID_1_2.geojson",
-    "../data/OBJECTID_1_7.geojson",
-    "../data/OBJECTID_1_9.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_11.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_12.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_2.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_7.geojson",
+    "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/OBJECTID_1_9.geojson",
   ]; // Add multiple files here
 
   if (this.checked) {
@@ -3470,7 +3530,9 @@ var boundary; // Variable to store the GeoJSON layer
 document.getElementById("boundary").addEventListener("change", function () {
   if (this.checked) {
     // Load and display the GeoJSON file
-    fetch("../data/x_88.5447.geojson") // Replace with actual GeoJSON file path
+    fetch(
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/x_88.5447.geojson"
+    ) // Replace with actual GeoJSON file path
       .then((response) => response.json())
       .then((data) => {
         boundary = L.geoJSON(data, {
@@ -3499,7 +3561,9 @@ var Lineament; // Variable to store the GeoJSON layer
 document.getElementById("Lineament").addEventListener("change", function () {
   if (this.checked) {
     // Load and display the GeoJSON file
-    fetch("../data/name_Lineament.geojson") // Replace with actual GeoJSON file path
+    fetch(
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/name_Lineament.geojson"
+    ) // Replace with actual GeoJSON file path
       .then((response) => response.json())
       .then((data) => {
         Lineament = L.geoJSON(data, {
@@ -3528,7 +3592,9 @@ var Major_fault; // Variable to store the GeoJSON layer
 document.getElementById("Major_fault").addEventListener("change", function () {
   if (this.checked) {
     // Load and display the GeoJSON file
-    fetch("../data/name_Major fault.geojson") // Replace with actual GeoJSON file path
+    fetch(
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/name_Major fault.geojson"
+    ) // Replace with actual GeoJSON file path
       .then((response) => response.json())
       .then((data) => {
         Major_fault = L.geoJSON(data, {
@@ -3557,7 +3623,9 @@ var Thrust_fault; // Variable to store the GeoJSON layer
 document.getElementById("Thrust_fault").addEventListener("change", function () {
   if (this.checked) {
     // Load and display the GeoJSON file
-    fetch("../data/name_Thrust fault.geojson") // Replace with actual GeoJSON file path
+    fetch(
+      "https://jonathancharles2003.github.io/Development-of-an-integrated-and-interactive-geo-spatial-web-platform-for-tectonic-information/data/name_Thrust fault.geojson"
+    ) // Replace with actual GeoJSON file path
       .then((response) => response.json())
       .then((data) => {
         Thrust_fault = L.geoJSON(data, {
